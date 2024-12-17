@@ -1,0 +1,24 @@
+.header {
+  width: 100%;
+  padding: 1rem 3rem;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--black);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.13);
+}
+
+.searchContainer {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10rem;
+  padding: 0 0.5rem;
+}
+.searchContainer > input {
+  padding: 0.7rem;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}

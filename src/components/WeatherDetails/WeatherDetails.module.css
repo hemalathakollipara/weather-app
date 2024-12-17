@@ -1,0 +1,99 @@
+.container {
+  width: fit-content;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: var(--border-radius);
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  padding: 2rem;
+}
+
+.detailsContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
+}
+
+.regionContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.regionContainer > span {
+  display: flex;
+  align-items: center;
+}
+.regionContainer > span > h3 {
+  font-size: 1.5rem;
+}
+.regionContainer > span > p,
+.regionContainer > p {
+  font-size: 1rem;
+  color: var(--gray2);
+  font-weight: 400;
+}
+
+.tempContainer {
+  display: flex;
+  gap: 1rem;
+}
+.tempContainer > h1 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+.tempContainer > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.tempContainer p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--gray2);
+}
+.tempContainer p:first-child {
+  font-weight: 600;
+}
+.tempContainer > div > div {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.3rem;
+}
+.tempContainer > div > div p:first-child {
+  color: rgb(82, 82, 255);
+}
+.tempContainer p:last-child {
+  color: rgb(255, 85, 85);
+}
+
+.otherDetails {
+  display: flex;
+  gap: 1rem;
+}
+.detail {
+  display: flex;
+  gap: 0.7rem;
+}
+.detail > div:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.detail > div:last-child > h4 {
+}
+.detail > div:last-child > p {
+  margin-top: 0.2rem;
+}
+
+.imageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.imageContainer {
+  color: var(--gray2);
+  font-weight: 400;
+}
