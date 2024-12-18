@@ -1,18 +1,25 @@
 .container {
   width: fit-content;
-  background-color: white;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: var(--foreground-color);
+  border: 1px solid var(--border-color);
   border-radius: var(--border-radius);
   display: flex;
   gap: 2rem;
   align-items: center;
-  padding: 2rem;
+  padding: 3rem 2rem;
+  flex-shrink: 0;
+}
+
+.icon {
+  color: var(--primary-color);
 }
 
 .detailsContainer {
   flex: 1;
   display: flex;
   flex-direction: column;
+  height: 100%;
+  justify-content: space-evenly;
   gap: 1.7rem;
 }
 
@@ -26,12 +33,13 @@
   align-items: center;
 }
 .regionContainer > span > h3 {
+  color: var(--primary-color);
   font-size: 1.5rem;
 }
 .regionContainer > span > p,
 .regionContainer > p {
   font-size: 1rem;
-  color: var(--gray2);
+  color: var(--gray);
   font-weight: 400;
 }
 
@@ -42,6 +50,7 @@
 .tempContainer > h1 {
   font-size: 3rem;
   font-weight: 800;
+  color: var(--primary-color);
 }
 .tempContainer > div {
   display: flex;
@@ -51,7 +60,7 @@
 .tempContainer p {
   font-size: 1rem;
   font-weight: 400;
-  color: var(--gray2);
+  color: var(--gray);
 }
 .tempContainer p:first-child {
   font-weight: 600;
@@ -82,6 +91,7 @@
   align-items: center;
 }
 .detail > div:last-child > h4 {
+  color: var(--primary-color);
 }
 .detail > div:last-child > p {
   margin-top: 0.2rem;
@@ -94,6 +104,6 @@
   align-items: center;
 }
 .imageContainer {
-  color: var(--gray2);
+  color: var(--gray);
   font-weight: 400;
 }

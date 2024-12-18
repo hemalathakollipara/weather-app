@@ -1,20 +1,26 @@
 .header {
   width: 100%;
   padding: 1rem 3rem;
-  background-color: white;
+  background-color: var(--foreground-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: var(--black);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.13);
+  border-bottom: 1px solid var(--border-color);
+}
+.header > div > h3 {
+  color: var(--black);
 }
 
 .searchContainer {
   display: flex;
   align-items: center;
-  border: 1px solid rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--border-color);
   border-radius: 10rem;
   padding: 0 0.5rem;
+}
+.searchIcon {
+  color: var(--primary-color);
 }
 .searchContainer > input {
   padding: 0.7rem;

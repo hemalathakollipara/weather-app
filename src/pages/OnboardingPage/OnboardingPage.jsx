@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./OnboardingPage.module.css";
 import { useNavigate } from "react-router-dom";
 
@@ -11,6 +11,13 @@ export default function OnboardingPage() {
     localStorage.setItem("city-name", cityName);
     navigate("/my-city");
   }
+
+  useEffect(() => {
+    const myCityName = localStorage.getItem("city-name");
+    if (myCityName) {
+      navigate("/my-city");
+    }
+  }, []);
 
   return (
     <div className={styles.container}>

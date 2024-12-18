@@ -17,3 +17,12 @@ export async function getWeather(lat, lon) {
   const data = await response.json();
   return data;
 }
+
+export async function getForecast(lat, lon) {
+  const endpoint = `${BASE_URL}/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${
+    import.meta.env.VITE_API_KEY
+  }&units=metric`;
+  const response = await fetch(endpoint);
+  const data = await response.json();
+  return data;
+}

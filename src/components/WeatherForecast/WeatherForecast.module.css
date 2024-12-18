@@ -1,0 +1,71 @@
+.container {
+  width: 100%;
+  background-color: var(--foreground-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 1.5rem 3rem;
+}
+
+.header > h3 {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.forecastCard {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 3rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+}
+
+.day {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.day > p:first-child {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+.day > p:last-child {
+  font-size: 0.8rem;
+}
+
+.temperature {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.temperature > span {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.temperature > span:first-child > .icon {
+  color: rgb(82, 82, 255);
+}
+.temperature > span:last-child > .icon {
+  color: rgb(255, 85, 85);
+}
+
+.otherDetails {
+  display: flex;
+  gap: 1rem;
+}
+.otherDetails > span {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.otherDetails > span > .icon {
+  color: var(--primary-color);
+}

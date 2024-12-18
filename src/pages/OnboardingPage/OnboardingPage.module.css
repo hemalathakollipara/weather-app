@@ -27,9 +27,9 @@
   color: var(--black);
 }
 .content > p {
-  color: var(--gray2);
+  color: var(--gray);
   font-weight: 400;
-  margin: 2rem 0;
+  margin: 3rem 0;
 }
 
 .inputContainer {

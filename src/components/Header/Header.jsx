@@ -23,7 +23,7 @@ export default function Header() {
       </div>
 
       <div className={styles.searchContainer}>
-        <Search size={20} />
+        <Search className={styles.searchIcon} size={20} />
         <input
           type="text"
           placeholder="Search cities..."
