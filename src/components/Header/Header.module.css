@@ -39,3 +39,9 @@
   cursor: pointer;
   color: var(--primary-color);
 }
+
+@media (max-width: 640px) {
+  .header {
+    padding: 1rem;
+  }
+}

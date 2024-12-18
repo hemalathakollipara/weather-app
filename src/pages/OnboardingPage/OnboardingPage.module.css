@@ -67,3 +67,23 @@
   justify-content: center;
   align-items: center;
 }
+
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    gap: 5rem;
+    padding-bottom: 2rem;
+    height: fit-content;
+  }
+
+  .contentContainer {
+    width: 100%;
+  }
+  .content {
+    width: 100%;
+  }
+
+  .imageContainer {
+    width: 100%;
+  }
+}

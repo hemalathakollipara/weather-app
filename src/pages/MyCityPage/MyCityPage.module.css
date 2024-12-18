@@ -16,3 +16,18 @@
   gap: 1rem;
   margin-top: 1rem;
 }
+
+@media (max-width: 1024px) {
+  .firstRow {
+    flex-direction: column;
+  }
+  .secondRow {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 640px) {
+  .content {
+    padding: 1rem;
+  }
+}

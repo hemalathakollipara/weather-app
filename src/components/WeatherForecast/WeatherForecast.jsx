@@ -41,26 +41,28 @@ export default function WeatherForecast({ forecast }) {
                 <p>{day.weather.description}</p>
               </div>
 
-              <div className={styles.temperature}>
-                <span>
-                  <ArrowDown size={22} className={styles.icon} />
-                  {formatTemp(day.temp_min)}
-                </span>
-                <span>
-                  <ArrowUp size={22} className={styles.icon} />
-                  {formatTemp(day.temp_max)}
-                </span>
-              </div>
+              <div className={styles.forecastDetails}>
+                <div className={styles.temperature}>
+                  <span>
+                    <ArrowDown size={22} className={styles.icon} />
+                    {formatTemp(day.temp_min)}
+                  </span>
+                  <span>
+                    <ArrowUp size={22} className={styles.icon} />
+                    {formatTemp(day.temp_max)}
+                  </span>
+                </div>
 
-              <div className={styles.otherDetails}>
-                <span>
-                  <Droplets className={styles.icon} />
-                  <span>{day.humidity}%</span>
-                </span>
-                <span>
-                  <Wind className={styles.icon} />
-                  <span>{day.wind}m/s</span>
-                </span>
+                <div className={styles.otherDetails}>
+                  <span>
+                    <Droplets className={styles.icon} />
+                    <span>{day.humidity}%</span>
+                  </span>
+                  <span>
+                    <Wind className={styles.icon} />
+                    <span>{day.wind}m/s</span>
+                  </span>
+                </div>
               </div>
             </div>
           ))}

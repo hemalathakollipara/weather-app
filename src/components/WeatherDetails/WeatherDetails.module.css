@@ -107,3 +107,20 @@
   color: var(--gray);
   font-weight: 400;
 }
+
+@media (max-width: 1024px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding: 2rem 1.5rem;
+    flex-direction: column;
+  }
+  .detailsContainer {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
