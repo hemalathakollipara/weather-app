@@ -7,6 +7,7 @@ import { HourlyTemperature } from "../../components/HourlyTemperature/HourlyTemp
 import OtherDetails from "../../components/OtherDetails/OtherDetails";
 import WeatherForecast from "../../components/WeatherForecast/WeatherForecast";
 import { getForecast, getGeoInfo, getWeather } from "../../api";
+import Loader from "../../components/Loader/Loader";
 
 export default function MyCityPage() {
   const navigate = useNavigate();
@@ -1577,21 +1578,25 @@ export default function MyCityPage() {
     fetchData();
   }, []);
 
-  if (!geoInfo || !weather || isLoading) return <div>Loading...</div>;
+  const isFetching = isLoading || !geoInfo || !weather || !forecast;
 
   return (
     <div className={styles.container}>
       <Header />
-      <div className={styles.content}>
-        <div className={styles.firstRow}>
-          <WeatherDetails geoInfo={geoInfo} weather={weather} />
-          <HourlyTemperature geoInfo={geoInfo} forecast={forecast} />
+      {isFetching ? (
+        <Loader />
+      ) : (
+        <div className={styles.content}>
+          <div className={styles.firstRow}>
+            <WeatherDetails geoInfo={geoInfo} weather={weather} />
+            <HourlyTemperature geoInfo={geoInfo} forecast={forecast} />
+          </div>
+          <div className={styles.secondRow}>
+            <OtherDetails weather={weather} />
+            <WeatherForecast forecast={forecast} />
+          </div>
         </div>
-        <div className={styles.secondRow}>
-          <OtherDetails weather={weather} />
-          <WeatherForecast forecast={forecast} />
-        </div>
-      </div>
+      )}
     </div>
   );
 }
