@@ -2,3 +2,17 @@
   background-color: var(--background-color);
   min-height: 100vh;
 }
+
+.content {
+  padding: 1rem 3rem;
+}
+
+.firstRow {
+  display: flex;
+  gap: 1rem;
+}
+.secondRow {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
